@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Affiliate Gallery</title>
+  <link rel="stylesheet" href="affiliate.css" />
+</head>
+<body>
+  <header>
+    <h1>Affiliate Product Gallery</h1>
+    <button id="addProductBtn">+ Add Product</button>
+  </header>
+
+  <!-- Upload Modal -->
+  <div id="uploadModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Add New Product</h2>
+      <input type="text" id="title" placeholder="Product title" />
+      <textarea id="description" placeholder="Short description"></textarea>
+      <input type="url" id="link" placeholder="Affiliate product link" />
+      <input type="file" id="media" accept="image/*,video/*" />
+      <button id="saveBtn">Save</button>
+      <button id="closeModal">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <main id="gallery"></main>
+
+  <script src="affiliate.js"></script>
+</body>
+</html>
